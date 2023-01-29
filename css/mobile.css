@@ -1,0 +1,16 @@
+/* 480px - 767px */
+
+@media screen and (min-width: 480px) {
+   
+    .container {
+        max-width: 428px;
+        margin: 0 auto;
+    }
+
+   /* =========== modal-windows  ===========*/
+   .backdrop-modal {
+        padding: 24px;
+        width: 408px;
+    }
+
+}

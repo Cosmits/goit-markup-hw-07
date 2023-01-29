@@ -15,6 +15,11 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+
+
 </head>
 
 <body>
@@ -40,6 +45,71 @@
                 <li class="contact-item"><a class="header-contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
             </ul>
+            <button class="header-menu-btn" type="button" mobile-menu-open>
+                <svg class="header-menu-btn-svg" width="32" height="22">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+
+        </div>
+
+        <!-- mobile-menu -->
+        <div class="mobile-menu is-hidden" mobile-menu>
+            <button class="mobile-menu-close" type="button" mobile-menu-close>
+                <svg class="mobile-menu-close-svg">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu-list list">
+                <li class="mobile-menu-item active-page"><a class="mobile-menu-link link" href="./index.html">Studio</a>
+                </li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link link" href="">Contacts</a></li>
+            </ul>
+
+            <div class="mobile-menu-all-contacts">
+                <ul class="mobile-menu-contact-list list">
+                    <li class="mobile-menu-contact-item">
+                        <a class="mobile-menu-contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mobile-menu-contact-item">
+                        <a class="mobile-menu-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-menu-soc-list list">
+                    <li class="teams-soc-item">
+                        <a href="" class="teams-link">
+                            <svg class="svg-icon-white" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="teams-soc-item">
+                        <a href="" class="teams-link">
+                            <svg class="svg-icon-white" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="teams-soc-item">
+                        <a href="" class="teams-link">
+                            <svg class="svg-icon-white" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="teams-soc-item">
+                        <a href="" class="teams-link">
+                            <svg class="svg-icon-white" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </header>
@@ -54,9 +124,9 @@
         </section>
 
         <!-- Our skills -->
-        <section class="skills">
+        <!-- <section class="skills">
             <div class="container">
-                <h2 class="visually-hidden">Our skills</h2> <!-- not visible -->
+                <h2 class="visually-hidden">Our skills</h2>
 
                 <ul class="skills-list list">
                     <li class="skills-content">
@@ -110,10 +180,10 @@
                 </ul>
 
             </div>
-        </section>
+        </section> -->
 
         <!-- What are we doing -->
-        <section class="projects">
+        <!-- <section class="projects">
             <div class="container">
                 <h2 class="projects-pre-title">What are we doing</h2>
                 <ul class="projects-list list">
@@ -131,10 +201,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Our Team -->
-        <section class="teams">
+        <!-- <section class="teams">
             <div class="container">
                 <h2 class="teams-pre-title">Our Team</h2>
                 <ul class="teams-list list">
@@ -296,9 +366,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="customer">
+        <!-- customer -->
+        <!-- <section class="customer">
             <div class="container">
                 <h2 class="customer-title">Customers</h2>
                 <ul class="customer-list list">
@@ -340,11 +411,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer-about">
                 <a class="footer-link-logo link" href="./index.html">Web<span
@@ -400,7 +471,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- modal  -->
     <div class="backdrop is-hidden" data-modal>
@@ -469,6 +540,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
