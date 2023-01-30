@@ -7,6 +7,11 @@
         margin: 0 auto;
     }
 
+    .hero {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
     /* =========== modal-windows  ===========*/
     .backdrop-modal {
         padding: 24px;

@@ -33,6 +33,16 @@
         padding-bottom: 188px;
         max-width: 1440px;
         margin: 0 auto;
+        background-image: var(--shadow-img), url(../images/hero/people-office__desktop.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: var(--shadow-img), url(../images/hero/people-office__desktop@2x.jpg);
+        }
     }
 
     .hero-title {

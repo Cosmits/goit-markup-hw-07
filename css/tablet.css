@@ -84,7 +84,18 @@
     /* =========== hero =========== */
 
     .hero {
+        max-width: 768px;
         padding-bottom: 108px;
+        background-image: var(--shadow-img), url(../images/hero/people-office__tablet.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: var(--shadow-img), url(../images/hero/people-office__tablet@2x.jpg);
+        }
     }
 
     .hero-title {
