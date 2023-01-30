@@ -3,13 +3,13 @@
 @media screen and (min-width: 1200px) {
 
     .container {
-        max-width: 1158px;
+        max-width: 1160px;
     }
 
     /* =========== header =========== */
 
     .header .container {
-        max-width: 1158px;
+        max-width: 1160px;
     }
 
     .header-nav {
@@ -33,5 +33,139 @@
     .hero-title {
         margin-bottom: 48px;
     }
+
+    /* =========== Our skills =========== */
+    .skills {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .skills-list.list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: var(--card-set-gap);
+    }
+
+    .skills-list .skills-content {
+        flex-basis: calc((100% - var(--card-set-gap) * 3) / 4);
+    }
+
+    .skills-svg-div {
+        margin-bottom: 8px;
+        width: 264px;
+        height: 112px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--light-mode-backgrounds);
+        border-radius: 4px;
+    }
+
+    .skills-title,
+    .teams-title {
+        text-align: start;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: calc(24/20);
+    }
+
+    .skills-text,
+    .teams-text,
+    .footer-text {
+        font-weight: 400;
+    }
+
+    /* =========== What are we doing =========== */
+
+    .projects {
+        display: block;
+        padding-bottom: 120px;
+    }
+
+    .projects-pre-title,
+    .teams-pre-title {
+        margin-bottom: 72px;
+
+        font-weight: 600;
+        font-size: 36px;
+        line-height: calc(40/36);
+
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+
+        color: var(--dark-navy-blue);
+    }
+
+    .projects-list.list {
+        display: flex;
+        align-items: center;
+        gap: var(--card-set-gap);
+    }
+
+    .projects-list .projects-item {
+        flex-basis: calc((100% - var(--card-set-gap) * 2) / 3);
+        /* outline: auto; */
+    }
+
+    /* ===========  Our skills =========== */
+
+    .skills,
+    .teams,
+    .customer {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .skills-list.list {
+        gap: 24px;
+    }
+
+    /* =========== Our Team =========== */
+
+    .teams>.container {
+        max-width: 1160px;
+    }
+
+    .teams-item {
+        flex-basis: calc((100% - var(--card-set-gap) * 3) / 4);
+    }
+
+    .teams-title {
+        text-align: center;
+    }
+
+    /* =========== customer =========== */
+
+    /* =========== footer =====++====== */
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        background: var(--dark-navy-blue);
+    }
+
+    .footer .container {
+        gap: 0px;
+        flex-wrap: nowrap;
+        max-width: 1160px;
+
+    }
+
+    .footer-link-logo {
+        text-align: start;
+    }
+
+    .footer-subscribe {
+        margin-left: 80px;
+    }
+
+    .footer-soc-media {
+        margin-left: 120px;
+    }
+
+
 
 }

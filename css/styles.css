@@ -119,7 +119,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: calc(2/18);
+    line-height: calc(21/18);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand-color);
@@ -312,49 +312,38 @@ body {
 
 /* =========== Our skills =========== */
 
-.skills {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.skills,
+.customer,
+.footer {
+    padding: 96px 0;
 }
 
 .skills-list.list {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
 }
-
-.skills-list .skills-content {
-    flex-basis: calc((100% - var(--card-set-gap) * 3) / 4);
-}
-
 
 .skills-svg-div {
-    margin-bottom: 8px;
-    width: 264px;
-    height: 112px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--light-mode-backgrounds);
-    border-radius: 4px;
+    display: none;
 }
 
 .skills-title,
 .teams-title {
+    text-align: center;
     margin-bottom: 8px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: calc(24/20);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40/36);
     letter-spacing: 0.02em;
-
     color: var(--dark-navy-blue);
 }
 
 .skills-text,
 .teams-text,
 .footer-text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16);
 
@@ -365,39 +354,13 @@ body {
 /* =========== What are we doing =========== */
 
 .projects {
-    padding-bottom: 120px;
-}
-
-.projects-pre-title,
-.teams-pre-title {
-    margin-bottom: 72px;
-
-    font-weight: 600;
-    font-size: 36px;
-    line-height: calc(40/36);
-
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-
-    color: var(--dark-navy-blue);
-}
-
-.projects-list.list {
-    display: flex;
-    align-items: center;
-    gap: var(--card-set-gap);
-}
-
-.projects-list .projects-item {
-    flex-basis: calc((100% - var(--card-set-gap) * 2) / 3);
-    /* outline: auto; */
+    display: none;
 }
 
 /* =========== Our Team =========== */
 .teams {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 128px;
 
     background-color: var(--light-mode-backgrounds);
 }
@@ -408,16 +371,40 @@ body {
 
 .teams-list {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: var(--card-set-gap);
 }
 
-.teams-item {
-    flex-basis: calc((100% - var(--card-set-gap) * 3) / 4);
+.teams-pre-title {
+    margin-bottom: 72px;
+    text-align: center;
 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40/36);
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: var(--dark-navy-blue);
+}
+
+.teams-item {
     background-color: var(--default-bg-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+}
+
+.teams-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 /20);
+}
+
+.teams-text {
+    font-weight: 400;
 }
 
 .team-card .card-content {
@@ -432,7 +419,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 24px;
-
 }
 
 .teams-link {
@@ -453,12 +439,6 @@ body {
 }
 
 /* =========== customer =========== */
-.customer {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    /* outline: auto; */
-}
-
 
 .customer-title {
     text-align: center;
@@ -474,9 +454,11 @@ body {
 .customer-list {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
+    /* padding: 0px; */
 }
 
 .customer-link {
@@ -485,7 +467,7 @@ body {
     border: 1px solid var(--subtle-text);
     border-radius: 4px;
 
-    width: 168px;
+    width: 190px;
     height: 88px;
     display: flex;
     justify-content: center;
@@ -510,20 +492,33 @@ body {
 
 
 /* =========== footer =========== */
-.footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
 
+.footer {
     background: var(--dark-navy-blue);
 }
 
 .footer .container {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 72px; */
+    row-gap: 72px;
 }
 
-.footer-soc-media {
-    margin-left: 120px;
+.footer-link-logo,
+.footer-soc-header {
+    display: block;
+    text-align: center;
 }
+
+.footer-link-logo-2 {
+    color: var(--light-mode-backgrounds);
+}
+
+/* .footer-soc-media {
+    margin-left: 120px;
+} */
 
 .footer-soc-header,
 .footer-subscribe-header {
@@ -532,20 +527,14 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16);
-    /* identical to box height, or 150% */
-
     letter-spacing: 0.02em;
 
     color: var(--active-text-color);
 }
 
-.footer-link-logo-2 {
-    color: var(--light-mode-backgrounds);
-}
-
 .footer-text {
     margin-top: 16px;
-    max-width: 264px;
+    /* max-width: 268px; */
     color: var(--accent-color);
 }
 
@@ -578,13 +567,28 @@ body {
     background-color: var(--success-color);
 }
 
-.footer-subscribe {
+/* =========== footer form =========== */
+
+/* .footer-subscribe {
     margin-left: 80px;
+} */
+
+.footer-subscribe-header {
+    text-align: center;
+}
+
+.footer-subscribe-group {
+    display: block;
+    /* width: 100%; */
+    /* gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column; */
 }
 
 .footer-subscribe-input {
 
-    width: 264px;
+    width: 100%;
     height: 40px;
     padding-left: 16px;
 
@@ -599,22 +603,16 @@ body {
     outline: none;
 }
 
-.footer-subscribe-group {
-    display: flex;
-    gap: 24px;
-
-}
-
 .footer-subscribe-btn {
+    margin: 0 auto;
+    margin-top: 16px;
     width: 165px;
     height: 40px;
-
     display: flex;
     gap: 16px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -656,12 +654,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--timing-function);
-    
+
     padding: 16px;
 
     width: 392px;
     min-height: 576px;
-    
+
     background-color: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);

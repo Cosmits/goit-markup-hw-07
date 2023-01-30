@@ -95,12 +95,88 @@
     }
 
     /* =========== mobile-menu ======== */
-   
+
     .mobile-menu {
         display: none;
     }
 
- 
+    /* =========== Our skills =========== */
+
+    .skills-list.list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: calc(var(--card-set-gap) * 3);
+        column-gap: var(--card-set-gap);
+    }
+
+    .skills-list .skills-content {
+        flex-basis: calc((100% - var(--card-set-gap) * 1) / 2);
+    }
+
+    /* =========== Our Team =========== */
+
+    .teams {
+        padding-bottom: 104px;
+    }
+
+    .teams>.container {
+        max-width: 584px;
+    }
+
+    .teams-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        /* column-gap: var(--card-set-gap); */
+        display: flex;
+    }
 
 
+    .teams-item {
+        flex-basis: calc((100% - var(--card-set-gap) * 1) / 2);
+    }
+
+    /* =========== customer =========== */
+
+    .customer-list {
+        column-gap: 24px;
+    }
+
+    .customer-link {
+        width: 168px;
+    }
+
+    /* =========== footer =========== */
+
+    .footer .container {
+        display: flex;
+        column-gap: var(--card-set-gap);
+        row-gap: calc(var(--card-set-gap) * 3);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        max-width: 584px;
+    }
+
+    .footer-about {
+        flex-basis: calc(var(--card-set-gap) * 11);
+    }
+
+    .footer-soc-header,
+    .footer-subscribe-header {
+        text-align: start;
+    }
+
+    .footer-subscribe-group {
+        display: flex;
+        gap: 24px;
+    }
+
+    .footer-subscribe-input {
+        width: 264px;
+    }
+
+    .footer-subscribe-btn {
+        margin: 0 auto;
+    }
 }
