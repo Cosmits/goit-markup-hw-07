@@ -21,6 +21,11 @@
         gap: 40px;
     }
 
+    .header-contact {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
     /* =========== hero =========== */
 
     .hero {
@@ -166,6 +171,25 @@
         margin-left: 120px;
     }
 
+    /* =========== Portfolio button ===========*/
+    .portfolio .skills-list {
+        padding-top: 96px;
+        padding-bottom: 72px;
+    }
 
+    /* =========== Portfolio card ===========*/
 
+    .portfolio-list.list {
+        row-gap: calc(2 * var(--card-set-gap));
+        column-gap: var(--card-set-gap);
+        padding-bottom: calc(5 * var(--card-set-gap));
+    }
+
+    .portfolio-list .item {
+        flex-basis: calc((100% - var(--card-set-gap) * 2) / 3);
+    }
+
+    .post-img-thumb img {
+        width: 360px;
+    }
 }

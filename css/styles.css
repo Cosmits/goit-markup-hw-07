@@ -827,20 +827,25 @@ body {
     transition: box-shadow var(--timing-function);
 }
 
-/* =========== Portfolio  ===========*/
+/* =========== Portfolio button ===========*/
 
-.portfolio {
-    padding-top: 96px;
-    padding-bottom: 120px;
-}
 
 .portfolio .skills-list {
-    margin-bottom: 72px;
+    padding: 48px 0;
+    max-width: 290px;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    row-gap: 16px;
+    column-gap: 24px;
+    flex-wrap: wrap;
 }
 
 .btn-portfolio {
-    padding: 12px 24px;
+    padding: 8px 16px;
     border-radius: 4px;
+    border: 1px solid var(--accent-color);
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -869,16 +874,21 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* =========== Portfolio card ===========*/
+
 .portfolio-list.list {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    column-gap: var(--card-set-gap);
     row-gap: calc(2 * var(--card-set-gap));
+    padding-bottom: calc(2 * var(--card-set-gap));
+    /* column-gap: var(--card-set-gap);
+    row-gap: calc(2 * var(--card-set-gap)); */
 }
 
-.portfolio-list .item {
+/* .portfolio-list .item {
     flex-basis: calc((100% - var(--card-set-gap) * 2) / 3);
-}
+} */
 
 .post-img-thumb {
     position: relative;

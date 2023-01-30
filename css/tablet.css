@@ -71,8 +71,8 @@
     }
 
     .header-contact {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        /* padding-top: 24px;
+        padding-bottom: 24px; */
 
         color: var(--primary-text-color);
         line-height: 24px;
@@ -154,7 +154,7 @@
         row-gap: calc(var(--card-set-gap) * 3);
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content:flex-start;
+        justify-content: flex-start;
         max-width: 584px;
     }
 
@@ -178,5 +178,38 @@
 
     .footer-subscribe-btn {
         margin: 0 auto;
+    }
+
+    /* =========== Portfolio button ===========*/
+    .portfolio .skills-list {
+        padding: 64px 0;
+        max-width: unset;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        row-gap: 16px;
+        column-gap: 24px;
+        flex-wrap: nowrap;
+    }
+
+    .btn-portfolio {
+        padding: 12px 24px;
+    }
+
+    /* =========== Portfolio card ===========*/
+
+    .portfolio-list.list {
+        row-gap: calc(3 * var(--card-set-gap));
+        column-gap: var(--card-set-gap);
+        padding-bottom: calc(4 * var(--card-set-gap));
+    }
+
+    .portfolio-list .item {
+        flex-basis: calc((100% - var(--card-set-gap) * 1) / 2);
+    }
+
+    .post-img-thumb img {
+        width: 356px;
     }
 }
