@@ -373,15 +373,11 @@ body {
     background-color: var(--light-mode-backgrounds);
 }
 
-/* .teams .container {
-    outline: auto;
-} */
-
 .teams-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--card-set-gap);
+    row-gap: calc(3 * var(--card-set-gap));
 }
 
 .teams-pre-title {
@@ -510,7 +506,6 @@ body {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    /* gap: 72px; */
     row-gap: 72px;
 }
 
@@ -523,10 +518,6 @@ body {
 .footer-link-logo-2 {
     color: var(--light-mode-backgrounds);
 }
-
-/* .footer-soc-media {
-    margin-left: 120px;
-} */
 
 .footer-soc-header,
 .footer-subscribe-header {
@@ -542,7 +533,6 @@ body {
 
 .footer-text {
     margin-top: 16px;
-    /* max-width: 268px; */
     color: var(--accent-color);
 }
 
@@ -577,21 +567,12 @@ body {
 
 /* =========== footer form =========== */
 
-/* .footer-subscribe {
-    margin-left: 80px;
-} */
-
 .footer-subscribe-header {
     text-align: center;
 }
 
 .footer-subscribe-group {
     display: block;
-    /* width: 100%; */
-    /* gap: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column; */
 }
 
 .footer-subscribe-input {
@@ -890,13 +871,7 @@ body {
     flex-wrap: wrap;
     row-gap: calc(2 * var(--card-set-gap));
     padding-bottom: calc(2 * var(--card-set-gap));
-    /* column-gap: var(--card-set-gap);
-    row-gap: calc(2 * var(--card-set-gap)); */
 }
-
-/* .portfolio-list .item {
-    flex-basis: calc((100% - var(--card-set-gap) * 2) / 3);
-} */
 
 .post-img-thumb {
     position: relative;

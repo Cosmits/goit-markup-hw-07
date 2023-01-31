@@ -138,8 +138,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 64px;
-        /* column-gap: var(--card-set-gap); */
-        display: flex;
+        column-gap: var(--card-set-gap);
     }
 
 
@@ -173,6 +172,10 @@
         flex-basis: calc(var(--card-set-gap) * 11);
     }
 
+    .footer-link-logo {
+        text-align: start;
+    }
+
     .footer-soc-header,
     .footer-subscribe-header {
         text-align: start;
@@ -192,6 +195,7 @@
     }
 
     /* =========== Portfolio button ===========*/
+    
     .portfolio .skills-list {
         padding: 64px 0;
         max-width: unset;
