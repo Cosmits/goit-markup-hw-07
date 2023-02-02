@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/tablet.css">
@@ -118,15 +121,15 @@
             <div class="container">
                 <h1 class="visually-hidden">Portfolio type</h1> <!-- not visible -->
                 <ul class="skills-list list">
-                    <li class="skills-item"><button class="btn-portfolio" type="button">All</button></li>
-                    <li class="skills-item"><button class="btn-portfolio" type="button">Web Site</button></li>
-                    <li class="skills-item"><button class="btn-portfolio" type="button">App</button></li>
-                    <li class="skills-item"><button class="btn-portfolio" type="button">Design</button></li>
-                    <li class="skills-item"><button class="btn-portfolio" type="button">Marketing</button></li>
+                    <li class="skills-item"><button class="btn-portfolio" type="button" data-filter="all">All</button></li>
+                    <li class="skills-item"><button class="btn-portfolio" type="button" data-filter="website">Web Site</button></li>
+                    <li class="skills-item"><button class="btn-portfolio" type="button" data-filter="app">App</button></li>
+                    <li class="skills-item"><button class="btn-portfolio" type="button" data-filter="design">Design</button></li>
+                    <li class="skills-item"><button class="btn-portfolio" type="button" data-filter="marketing">Marketing</button></li>
                 </ul>
 
                 <ul class="portfolio-list list">
-                    <li class="item">
+                    <li class="item" data-cat="app">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img1@2x.jpg 2x" src="./images/portfolio/img1.jpg"
@@ -145,7 +148,7 @@
                         </a>
                     </li>
 
-                    <li class="item">
+                    <li class="item" data-cat="marketing">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img2@2x.jpg 2x" src="./images/portfolio/img2.jpg"
@@ -164,7 +167,7 @@
                         </a>
                     </li>
 
-                    <li class="item">
+                    <li class="item" data-cat="app">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img3@2x.jpg 2x" src="./images/portfolio/img3.jpg"
@@ -183,7 +186,7 @@
                         </a>
                     </li>
 
-                    <li class="item">
+                    <li class="item" data-cat="marketing">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img4@2x.jpg 2x" src="./images/portfolio/img4.jpg"
@@ -202,7 +205,7 @@
                         </a>
                     </li>
 
-                    <li class="item">
+                    <li class="item" data-cat="design">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img5@2x.jpg 2x" src="./images/portfolio/img5.jpg"
@@ -221,7 +224,7 @@
                         </a>
                     </li>
 
-                    <li class="item">
+                    <li class="item" data-cat="marketing">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img6@2x.jpg 2x" src="./images/portfolio/img6.jpg"
@@ -240,7 +243,7 @@
                         </a>
                     </li>
 
-                    <li class="item">
+                    <li class="item" data-cat="design">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img7@2x.jpg 2x" src="./images/portfolio/img7.jpg"
@@ -259,7 +262,7 @@
                         </a>
                     </li>
 
-                    <li class="item">
+                    <li class="item" data-cat="website">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img8@2x.jpg 2x" src="./images/portfolio/img8.jpg"
@@ -278,7 +281,7 @@
                         </a>
                     </li>
 
-                    <li class="item">
+                    <li class="item" data-cat="website">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img9@2x.jpg 2x" src="./images/portfolio/img9.jpg"
@@ -360,6 +363,7 @@
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter.js"></script>
 </body>
 
 </html>
