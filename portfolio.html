@@ -17,6 +17,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/tablet.css">
@@ -121,15 +124,23 @@
             <div class="container">
                 <h1 class="visually-hidden">Portfolio type</h1> <!-- not visible -->
                 <ul class="skills-list list">
-                    <li class="skills-item"><button class="btn-portfolio" type="button" data-filter="all">All</button></li>
-                    <li class="skills-item"><button class="btn-portfolio" type="button" data-filter="website">Web Site</button></li>
-                    <li class="skills-item"><button class="btn-portfolio" type="button" data-filter="app">App</button></li>
-                    <li class="skills-item"><button class="btn-portfolio" type="button" data-filter="design">Design</button></li>
-                    <li class="skills-item"><button class="btn-portfolio" type="button" data-filter="marketing">Marketing</button></li>
+                    <li class="skills-item" data-aos="fade-up" data-aos-once="true"><button class="btn-portfolio"
+                            type="button" data-filter="all">All</button>
+                    </li>
+                    <li class="skills-item" data-aos="fade-up" data-aos-once="true"><button class="btn-portfolio"
+                            type="button" data-filter="website">Web
+                            Site</button></li>
+                    <li class="skills-item" data-aos="fade-up" data-aos-once="true"><button class="btn-portfolio"
+                            type="button" data-filter="app">App</button>
+                    </li>
+                    <li class="skills-item" data-aos="fade-up" data-aos-once="true"><button class="btn-portfolio"
+                            type="button" data-filter="design">Design</button></li>
+                    <li class="skills-item" data-aos="fade-up" data-aos-once="true"><button class="btn-portfolio"
+                            type="button" data-filter="marketing">Marketing</button></li>
                 </ul>
 
                 <ul class="portfolio-list list">
-                    <li class="item" data-cat="app">
+                    <li class="item" data-cat="app" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img1@2x.jpg 2x" src="./images/portfolio/img1.jpg"
@@ -148,7 +159,7 @@
                         </a>
                     </li>
 
-                    <li class="item" data-cat="marketing">
+                    <li class="item" data-cat="marketing" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img2@2x.jpg 2x" src="./images/portfolio/img2.jpg"
@@ -167,7 +178,7 @@
                         </a>
                     </li>
 
-                    <li class="item" data-cat="app">
+                    <li class="item" data-cat="app" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img3@2x.jpg 2x" src="./images/portfolio/img3.jpg"
@@ -186,7 +197,7 @@
                         </a>
                     </li>
 
-                    <li class="item" data-cat="marketing">
+                    <li class="item" data-cat="marketing" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img4@2x.jpg 2x" src="./images/portfolio/img4.jpg"
@@ -205,7 +216,7 @@
                         </a>
                     </li>
 
-                    <li class="item" data-cat="design">
+                    <li class="item" data-cat="design" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img5@2x.jpg 2x" src="./images/portfolio/img5.jpg"
@@ -224,7 +235,7 @@
                         </a>
                     </li>
 
-                    <li class="item" data-cat="marketing">
+                    <li class="item" data-cat="marketing" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img6@2x.jpg 2x" src="./images/portfolio/img6.jpg"
@@ -243,7 +254,7 @@
                         </a>
                     </li>
 
-                    <li class="item" data-cat="design">
+                    <li class="item" data-cat="design" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img7@2x.jpg 2x" src="./images/portfolio/img7.jpg"
@@ -262,7 +273,7 @@
                         </a>
                     </li>
 
-                    <li class="item" data-cat="website">
+                    <li class="item" data-cat="website" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img8@2x.jpg 2x" src="./images/portfolio/img8.jpg"
@@ -281,7 +292,7 @@
                         </a>
                     </li>
 
-                    <li class="item" data-cat="website">
+                    <li class="item" data-cat="website" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="post link">
                             <div class="post-img-thumb">
                                 <img srcset="./images/portfolio/img9@2x.jpg 2x" src="./images/portfolio/img9.jpg"
@@ -307,38 +318,38 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-about">
-                <a class="footer-link-logo link" href="./index.html">Web<span
+                <a class="footer-link-logo link" data-aos="fade-up" data-aos-once="true" href="./index.html">Web<span
                         class="footer-link-logo-2">Studio</span></a>
-                <p class="footer-text">
+                <p class="footer-text" data-aos="fade-up" data-aos-once="true">
                     Increase the flow of customers and sales for your business with digital
                     marketing & growth solutions.
                 </p>
             </div>
             <div class="footer-soc-media">
-                <h2 class="footer-soc-header">Social media</h2>
+                <h2 class="footer-soc-header" data-aos="fade-up" data-aos-once="true">Social media</h2>
                 <ul class="footer-soc-list list">
-                    <li class="footer-soc-item">
+                    <li class="footer-soc-item" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="footer-link link">
                             <svg class="svg-icon-white" width="24" height="24">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-soc-item">
+                    <li class="footer-soc-item" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="footer-link link">
                             <svg class="svg-icon-white" width="24" height="24">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-soc-item">
+                    <li class="footer-soc-item" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="footer-link link">
                             <svg class="svg-icon-white" width="24" height="24">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-soc-item">
+                    <li class="footer-soc-item" data-aos="fade-up" data-aos-once="true">
                         <a href="" class="footer-link link">
                             <svg class="svg-icon-white" width="24" height="24">
                                 <use href="./images/icons.svg#icon-linkedin2"></use>
@@ -348,10 +359,12 @@
                 </ul>
             </div>
             <div class="footer-subscribe">
-                <h2 class="footer-subscribe-header">Subscribe</h2>
+                <h2 class="footer-subscribe-header" data-aos="fade-up" data-aos-once="true">Subscribe</h2>
                 <form class="footer-subscribe-group">
-                    <input class="footer-subscribe-input" type="email" name="email" id="email" placeholder="E-mail">
-                    <button class="footer-subscribe-btn" type="button">
+                    <!-- <label for="email"></label> -->
+                    <input class="footer-subscribe-input" data-aos="fade-up" data-aos-once="true" type="email"
+                        name="email" id="email" placeholder="E-mail" />
+                    <button class="footer-subscribe-btn" data-aos="fade-up" data-aos-once="true" type="submit">
                         <span>Subscribe</span>
                         <svg class="svg-icon-white" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
@@ -362,6 +375,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/filter.js"></script>
 </body>
