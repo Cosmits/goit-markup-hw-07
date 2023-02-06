@@ -84,9 +84,11 @@
     /* =========== hero =========== */
 
     .hero {
-        max-width: 768px;
-        padding-bottom: 108px;
-        background-image: var(--shadow-img), url(../images/hero/people-office__tablet.jpg);
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+
+        background-image: var(--shadow-img), url(../images/hero/people-office__desktop.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -94,7 +96,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: var(--shadow-img), url(../images/hero/people-office__tablet@2x.jpg);
+            background-image: var(--shadow-img), url(../images/hero/people-office__desktop@2x.jpg);
         }
     }
 
@@ -195,7 +197,7 @@
     }
 
     /* =========== Portfolio button ===========*/
-    
+
     .portfolio .skills-list {
         padding: 64px 0;
         max-width: unset;

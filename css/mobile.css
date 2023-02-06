@@ -8,8 +8,19 @@
     }
 
     .hero {
-        max-width: 480px;
-        margin: 0 auto;
+        max-width: 768px;
+        background-position: 50% 50%;
+        padding-bottom: 108px;
+        background-image: var(--shadow-img), url(../images/hero/people-office__tablet.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: var(--shadow-img), url(../images/hero/people-office__tablet@2x.jpg);
+        }
     }
 
     /* =========== modal-windows  ===========*/
@@ -18,5 +29,14 @@
         width: 408px;
     }
 
+    .mobile-menu-contact-item:first-child .link {
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+    .mobile-menu-contact-item:last-child .link {
+        font-weight: 500;
+        font-size: 20px;
+    }
 
 }
