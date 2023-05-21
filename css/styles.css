@@ -644,6 +644,7 @@ body {
 .overlay.active {
     opacity: 1;
     visibility: visible;
+    overflow: hidden;
 }
 
 
